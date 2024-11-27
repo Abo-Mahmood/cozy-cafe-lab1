@@ -34,16 +34,19 @@ const parElement = document.createElement('p')
 const h3Element = document.createElement('h3');
 h3Element.textContent ='Karak Tea Tasting Event';
 parElement.textContent ='Try our Tea and you will feel at the see';
-div1Element.appendChild(parElement);
+
 div1Element.appendChild(h3Element);
+div1Element.appendChild(parElement);
 //section.appendChild(div1Element);
 div1Element.classList.add('blog-post');
 const sectionElement = document.getElementById('blogs');
 sectionElement.appendChild(div1Element);
+parElement.before(h3Element);
 
 
 const divElement = document.getElementsByClassName ('blog-post');
 console.log(divElement);
+
 
 
 
